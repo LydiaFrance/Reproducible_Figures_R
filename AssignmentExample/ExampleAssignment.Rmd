@@ -19,7 +19,7 @@ Here is my written answer.
 ## Question 02: 
 ### Create a figure using the Palmer Penguin dataset that is correct but badly communicates the data.
 
-Here is my terrible figure. I made the figure, saved it to a file `bad_figure.jpg`, and now I am embedding it in this file. I use the following markdown code to embed an image file:
+Here is my terrible figure. I wrote code to make the figure in a different file, saved the figure to a file `bad_figure.jpg`, and now I am embedding it here. I use the following markdown code to embed an image file:
 
 ![](bad_figure.jpg)
 
@@ -27,14 +27,14 @@ If my image was saved in a `figures` folder, then the path inside would be:
 
 ![](figures/bad_figure.jpg)
 
-If I prefer I can have the code in an rmd cell and it makes the plot underneath. The code will not be marked so I can have it in the rmd file but make sure it doesn't show up in the html/pdf. I started my r code cell block with:
+If I prefer I can have the code written in this file it is in the following rmd cell and it makes the plot underneath. The code will not be marked so I can make sure it doesn't show up in the html/pdf. I started my r code cell block with:
 
 ` ```{r pseudo-code, echo=FALSE}`
 
 Where `echo=FALSE` means the code will not be shown in the resulting html/pdf, but the resulting figure will be:
 
 ```{r pseudo-code, echo=FALSE}
-# Some pseudo code that isn't in the final html document. 
+# Some code that isn't in the final html document. 
 
 plot_flipper_figure <- function(penguins_flippers){
   penguins_flippers %>% 
@@ -51,8 +51,10 @@ plot_flipper_figure <- function(penguins_flippers){
 
 flipper_boxplot <- plot_flipper_figure(penguins_flippers)
 
-```
+# This is just an inbuilt quick plot to make something appear in the html. 
+plot(pressure) 
 
+```
 
 Here is my written answer about the figure -- which will be marked. 
 
