@@ -4,7 +4,7 @@ Here is a way to do this, but if you have already done it differently, don't wor
 
 ## Step 01: Create `assignment.rmd`
 
-Write your assignment up in an r markdown file. Firstly start with your title, and then
+Write your assignment up in an r markdown file. 
 
 ## Step 02: Write your answer for Question 01. 
 
