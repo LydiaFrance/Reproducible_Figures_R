@@ -21,14 +21,11 @@ Here is my written answer.
 
 Here is my terrible figure. I made the figure, saved it to a file `bad_figure.jpg`, and now I am embedding it in this file. I use the following markdown code to embed an image file:
 
-`![](bad_figure.jpg)`
+![](bad_figure.jpg)
 
 If my image was saved in a `figures` folder, then the path inside would be:
 
-`![](figures/bad_figure.jpg)`
-
-
-![](bad_figure.jpg)
+![](figures/bad_figure.jpg)
 
 If I prefer I can have the code in an rmd cell and it makes the plot underneath. The code will not be marked so I can have it in the rmd file but make sure it doesn't show up in the html/pdf. I started my r code cell block with:
 
@@ -39,21 +36,20 @@ Where `echo=FALSE` means the code will not be shown in the resulting html/pdf, b
 ```{r pseudo-code, echo=FALSE}
 # Some pseudo code that isn't in the final html document. 
 
-#plot_flipper_figure <- function(penguins_flippers){
-#  penguins_flippers %>% 
-#    ggplot(aes(x = species, y = flipper_length_mm)) +
-#    geom_boxplot(aes(color = species), width = 0.3, show.legend = FALSE) +
-#    geom_jitter(aes(color = species), alpha = 0.3, show.legend = FALSE, 
-#                position = position_jitter(width = 0.2, seed = 0)) +
-#    scale_color_manual(values = c("darkorange","purple","cyan4")) +
-#    scale_x_discrete(labels=c("Adelie","Chinstrap","Gentoo")) +
-#    labs(x = "Penguin Species",
-#         y = "Flipper length (mm)") +
-#    theme_bw()
-#}
+plot_flipper_figure <- function(penguins_flippers){
+  penguins_flippers %>% 
+    ggplot(aes(x = species, y = flipper_length_mm)) +
+    geom_boxplot(aes(color = species), width = 0.3, show.legend = FALSE) +
+    geom_jitter(aes(color = species), alpha = 0.3, show.legend = FALSE, 
+                position = position_jitter(width = 0.2, seed = 0)) +
+    scale_color_manual(values = c("darkorange","purple","cyan4")) +
+    scale_x_discrete(labels=c("Adelie","Chinstrap","Gentoo")) +
+    labs(x = "Penguin Species",
+         y = "Flipper length (mm)") +
+    theme_bw()
+}
 
-#flipper_boxplot <- plot_flipper_figure(penguins_flippers)
-plot(pressure)
+flipper_boxplot <- plot_flipper_figure(penguins_flippers)
 
 ```
 
