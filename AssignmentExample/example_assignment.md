@@ -1,8 +1,14 @@
-Some confusion about how to upload multiple files to your homework portal. 
-Here is a way to do this, but if you have already done it differently, don't worry. 
 
-[This is an example assignment.rmd](https://github.com/LydiaFrance/Reproducible_Figures_R/blob/lessons/AssignmentExample/ExampleAssignment.Rmd)
-[This is an example assignment.html](https://htmlpreview.github.io/?https://github.com/LydiaFrance/Reproducible_Figures_R/blob/lessons/AssignmentExample/ExampleAssignment.html)
+# [This is an example assignment.rmd](https://github.com/LydiaFrance/Reproducible_Figures_R/blob/lessons/AssignmentExample/ExampleAssignment.Rmd)
+
+# [This is an example assignment.html](https://htmlpreview.github.io/?https://github.com/LydiaFrance/Reproducible_Figures_R/blob/lessons/AssignmentExample/ExampleAssignment.html)
+
+# Written Instructions
+
+Some confusion about the assignment as multiple files can't be uploaded to your homework portal. 
+
+Here is a way to do the assignment in a single file. If you have found an alternative way, that's fine, don't worry. 
+
 
 ## Create `assignment.rmd`
 
