@@ -43,7 +43,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## QUESTION 2: Data Pipeline
 
-*Write a data analysis pipeline in your .rmd RMarkdown file. You should be aiming to write a clear explanation of the steps as well as clear code.*
+*Write a data analysis pipeline in your .rmd RMarkdown file. You should be aiming to write a clear explanation of the steps, the figures visible, as well as clear code.*
 
 *Your code should include the steps practiced in the lab session:*
 
