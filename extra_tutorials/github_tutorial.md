@@ -3,7 +3,7 @@
 
 If you can't get Git to work on your computer, you can upload files manually. Here is what you do:
 
-## Create a new repository
+# Create a new repository
 
 First go to `https://github.com/YourNameHere` and find the `Repository` tab. Then press the green `new` button.  
 
@@ -15,7 +15,7 @@ Make sure it is public.
 
 Then press the `create` button. 
 
-## Add files to the repository
+# Add files to the repository
 
 ![](02_repo_name.png)
 
@@ -23,7 +23,7 @@ You can then add files by pressing this link in the blue banner.
 
 ![](03_add_files.png)
 
-### DELETE RENV FOLDER !!! IMPORTANT!!!
+# DELETE RENV FOLDER !!! IMPORTANT!!!
 
 You need to delete your `renv` folder from your project. BUT LEAVE THE `renv.lock` file. 
 
@@ -38,7 +38,7 @@ With drag and drop we need to do this ourselves.
 
 **BUT** we definitely need the renv.lock file which is how other people know which packages we are using. 
 
-### Drag and drop files
+# Drag and drop files
 
 Then you want to navigate to your Project folder in your Windows files or Mac files, open that folder, and drag and drop the contents into the box.
 
@@ -54,12 +54,13 @@ The files you need to include:
 - your renv.lock file
 
 
-
 ![](04_drag_files.png)
 
 Give it a few seconds to upload. You can see your files have paths that show they are in subfolders. 
 
 ![](05_file_results.png)
+
+# Finish by Pressing Commit
 
 Press the green `commit` button when it has finished uploading. 
 
@@ -69,8 +70,28 @@ Now you can see your files and folders in your github repo. If you have a `READM
 
 ![](07_subfolders.png)
 
+# Sharing your Work
+
+# This is critical for the assignment. 
+
 Give your partner the link to the repo. This will be something like  `https//github.com/LydiaFrance/PenguinProject`
+
+# Download the code 
 
 Your partner now has to press the green code button, and they can download a zip. This will contain the full subfolder structure, and they just have to unzip it on their machine. 
 
 ![](08_partner_zip.png)
+
+# Opening the code
+
+When you have the code saved, make sure you unzip the folder to a sensible location on your computer (not My Downloads, not My Desktop). 
+
+Double click on their `.RProj` file to launch RStudio. 
+
+# Install their Packages
+
+You will have downloaded a `renv.lock` file but that is just the instructions for what to install. In RStudio in the console, write:
+
+`renv::restore()`
+
+And it will install everything you need. Then you can run their code. 
